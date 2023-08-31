@@ -118,7 +118,7 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=RvZvMrlsr4o"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -126,7 +126,7 @@
                   </span>
                   <span>Presentation Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Poster Link. -->
               <span class="link-block">
                 <a href="static/poster_neuriss_l4dc2023.pdf"
@@ -182,18 +182,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/TODO?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -202,14 +190,26 @@
           <p>
             Developing stable controllers for large-scale networked dynamical systems is crucial but has long been challenging due to two key obstacles: certifiability and scalability. In this paper, we present a general framework to solve these challenges using compositional neural certificates based on ISS (Input-to-State Stability) Lyapunov functions. Specifically, we treat a large networked dynamical system as an interconnection of smaller subsystems and develop methods that can find each subsystem a decentralized controller and an ISS Lyapunov function; the latter can be collectively composed to prove the global stability of the system. To ensure the scalability of our approach, we develop generalizable and robust ISS Lyapunov functions where a single function can be used across different subsystems and the certificates we produced for small systems can be generalized to be used on large systems with similar structures. We encode both ISS Lyapunov functions and controllers as neural networks and propose a novel training methodology to handle the logic in ISS Lyapunov conditions that encodes the interconnection with neighboring subsystems. We demonstrate our approach in systems including Platoon, Drone formation control, and Power systems. Experimental results show that our framework can reduce the tracking error up to 75% compared with RL algorithms when applied to large-scale networked systems. 
           </p>
-          <!-- <p>
-            TODO: paragraph 2
-          </p> -->
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
   </div>
+</section>
+
+
+<section class="section">
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/RvZvMrlsr4o?rel=0&amp;showinfo=0"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
 </section>
 
 
@@ -280,9 +280,15 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@inproceedings{zhang2023neuriss,
       title={Compositional Neural Certificates for Networked Dynamical Systems},
-      author={Songyuan Zhang and Yumeng Xiu and Guannan Qu and Chuchu Fan},
-      booktitle={5th Annual Learning for Dynamics {\&} Control Conference},
+      author={Zhang, Songyuan and Xiu, Yumeng and Qu, Guannan and Fan, Chuchu},
+      booktitle={Proceedings of The 5th Annual Learning for Dynamics and Control Conference},
+      pages={272--285},
       year={2023},
+      editor={Matni, Nikolai and Morari, Manfred and Pappas, George J.},
+      volume={211},
+      series={Proceedings of Machine Learning Research},
+      month={15--16 Jun},
+      publisher={PMLR},
 }</code></pre>
   </div>
 </section>
